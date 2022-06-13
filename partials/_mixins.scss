@@ -1,0 +1,11 @@
+@mixin image-reset {
+  width: 100%;
+  position: absolute;
+  bottom: -5%;
+  display: flex;
+  justify-content: center;
+}
+@mixin font-mr($unit1, $unit2) {
+  font-size: $unit1;
+  margin-bottom: $unit2;
+}

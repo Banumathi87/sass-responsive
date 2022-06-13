@@ -1,0 +1,95 @@
+@import "partials/partials";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: $font-two;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $primary-color;
+  overflow: hidden;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: $color;
+    nav li {
+      display: block;
+      margin: 10px 20px;
+      font-weight: 600;
+      display: inline;
+    }
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    .content {
+      width: 50%;
+      margin-top: 8%;
+      margin-left: 5%;
+      color: $color;
+      overflow: hidden;
+      h1 {
+        @include font-mr(80px, 1%);
+        letter-spacing: 8px;
+      }
+      h3 {
+        @include font-mr(25px, 3%);
+        font-family: $font-one;
+        span {
+          color: $sec-color;
+        }
+      }
+      p {
+        @include font-mr(20px, 3%);
+        font-family: $font-one;
+        $text-limit: 4;
+        @if $text-limit <=3 {
+          color: orange;
+        }
+        @if else $text-limit >3 and $text-limit <=6 {
+          color: green;
+        } @else {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.image {
+  width: 50%;
+  margin-top: 8%;
+}
+img {
+  width: 40rem;
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+  .image {
+    @include image-reset;
+  }
+  img {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content {
+    width: 100%;
+    text-align: center;
+    h1 h3 p {
+      margin-bottom: 5%;
+    }
+  }
+  .image {
+    @include image-reset;
+  }
+  img {
+    width: 30rem;
+  }
+}

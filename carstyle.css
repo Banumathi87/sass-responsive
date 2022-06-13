@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+  color: white;
+}
+
+body header nav li {
+  display: block;
+  margin: 10px 20px;
+  font-weight: 600;
+  display: inline;
+}
+
+body .main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main .content {
+  width: 50%;
+  margin-top: 8%;
+  margin-left: 5%;
+  color: white;
+  overflow: hidden;
+}
+
+body .main .content h1 {
+  font-size: 80px;
+  margin-bottom: 1%;
+  letter-spacing: 8px;
+}
+
+body .main .content h3 {
+  font-size: 25px;
+  margin-bottom: 3%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body .main .content h3 span {
+  color: yellow;
+}
+
+body .main .content p {
+  font-size: 20px;
+  margin-bottom: 3%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: green;
+}
+
+.image {
+  width: 50%;
+  margin-top: 8%;
+}
+
+img {
+  width: 40rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+    position: absolute;
+    bottom: -5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+  .content h1 h3 p {
+    margin-bottom: 5%;
+  }
+  .image {
+    width: 100%;
+    position: absolute;
+    bottom: -5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  img {
+    width: 30rem;
+  }
+}
+/*# sourceMappingURL=carstyle.css.map */
